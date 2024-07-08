@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept of this</title>
+    <script>
+      //   function show() {
+      //     console.log(this);
+      //   }
+      //   show(); //output: window
+      function display() {
+        console.log(this);
+      }
+
+      let person = {
+        fullName: "Avinash Kumar",
+        // age:23,
+        show: function () {
+          console.log(this.fullName);
+        },
+      };
+      //   person.show(); //Avinash Kumar
+      //   setTimeout(person.show, 4000); //undefined
+      display();
+    </script>
+  </head>
+  <body></body>
+</html>
